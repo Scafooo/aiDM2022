@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+    <Appenders>
+        <Console name="CONSOLE" target="SYSTEM_OUT">
+            <PatternLayout>
+                <Pattern>%highlight{[%-5level]} %d{yyyy-MM-dd HH:mm:ss.SSS} %c{10} %c{1}: %L - %msg%n%throwable</Pattern>
+            </PatternLayout>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <Root level="DEBUG" additivity="false">
+            <AppenderRef level="INFO" ref="CONSOLE" />
+        </Root>
+    </Loggers>
+
+</Configuration>

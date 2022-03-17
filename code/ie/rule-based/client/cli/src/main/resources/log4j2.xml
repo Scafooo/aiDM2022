@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+    <Appenders>
+        <Console name="CONSOLE" target="SYSTEM_OUT">
+            <PatternLayout>
+                <Pattern>%highlight{[%-5level]} %d{yyyy-MM-dd HH:mm:ss.SSS} %c{10} %c{1}: %L - %msg%n%throwable</Pattern>
+            </PatternLayout>
+        </Console>
+        <File name="FILE" fileName="test/resources/app.log" append="true">
+            <PatternLayout>
+                <Pattern>%highlight{[%-5level]} %d{yyyy-MM-dd HH:mm:ss.SSS} %c{10} %c{1}: %L - %msg%n%throwable</Pattern>
+            </PatternLayout>
+        </File>
+    </Appenders>
+
+    <Loggers>
+        <Root level="ERROR" additivity="false">
+            <AppenderRef level="DEBUG" ref="CONSOLE" />
+            <AppenderRef level="DEBUG" ref="FILE" />
+        </Root>
+    </Loggers>
+
+</Configuration>
