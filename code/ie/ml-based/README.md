@@ -34,8 +34,7 @@ Also, you need to import the configuration and checkpoint file of the pretrained
 
 ## Instructions
 1. Configure ```data_extraction.py```
-Configure extraction parameters:
-- Use ```fine_tuning=True``` if you want to use the fine-tuned model for the extraction,  ```fine_tuning=False``` if you want to use the original model developed by CascadeTabNet authors.
+- Use ```fine_tuning=True``` if you want to use the fine-tuned model (epoch_10.pth) for the extraction,  ```fine_tuning=False``` if you want to use the original model (epoch_36.pth) developed by CascadeTabNet authors.
 - Choose the type of table that you want to extract (```table_type```), between "costs evolution", "costs composition" and "performance scenarios".
 - Create the files "costs_evolution_extractions.csv", "costs_composition_extractions.csv", "performance_extractions.csv".
 - Set ```mode='append'``` tp store the extractions in the csv.
