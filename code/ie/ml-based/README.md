@@ -31,3 +31,12 @@ Also, you need to import the configuration and checkpoint file of the pretrained
 # Download the pretrained model
 !gdown "https://drive.google.com/u/0/uc?id=1-QieHkR1Q7CXuBu4fp3rYrvDG9j26eFT" # ICDAR 19 modern table structure recognition
 ```
+
+## Instructions
+Configure extraction parameters:
+- Use ```fine_tuning=True``` if you want to use the fine-tuned model for the extraction,  ```fine_tuning=False``` if you want to use the original model developed by CascadeTabNet authors.
+- Choose the type of table that you want to extract (```table_type```), between "costs evolution", "costs composition" and "performance scenarios".
+
+If you want to store the extractions in a csv:
+- Create the files "costs_evolution_extractions.csv", "costs_composition_extractions.csv", "performance_extractions.csv"-
+- Set ```mode='append'```
