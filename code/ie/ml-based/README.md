@@ -1,4 +1,6 @@
-# Requirements
+# Table Information Extractor
+
+## Requirements
 To run this code you need to install the following:
 
 ```
@@ -20,4 +22,12 @@ To run this code you need to install the following:
 !sudo apt install tesseract-ocr
 !apt-get install tesseract-ocr-ita
 !pip install pillow==6.2.1 
+```
+
+Also, you need to import the configuration and checkpoint file of the pretrained model from CascadeTabNet:
+
+```
+!git clone https://github.com/DevashishPrasad/CascadeTabNet.git 
+# Download the pretrained model
+!gdown "https://drive.google.com/u/0/uc?id=1-QieHkR1Q7CXuBu4fp3rYrvDG9j26eFT" # ICDAR 19 modern table structure recognition
 ```
