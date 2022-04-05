@@ -1,3 +1,3 @@
 # aiDM-2022
 
-Descrizione Cartella
+Folder containing files for AIDM2022
